@@ -1,3 +1,5 @@
-<p>{{ saludo }} {{ content }}</p>
-<input [(ngModel)]="texto">
+<p *ngFor="let item of content">{{ item }}</p>
+<mat-form-field >
+    <textarea matInput [(ngModel)] = "texto"></textarea>
+</mat-form-field>
 <button (click) = "addPost()" >Guardar</button>

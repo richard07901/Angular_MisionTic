@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Post } from '../models/post.model';
+
 @Component({
   selector: 'app-create-post',
   templateUrl: './create-post.component.html',
@@ -9,7 +11,8 @@ export class CreatePostComponent implements OnInit {
 
   saludo:string = "Hello Everyone"
   texto:string = '';
-  content:string = '';
+  content:string[] = [];
+  posts:Post[] = [];
 
   constructor() { }
 
@@ -17,6 +20,6 @@ export class CreatePostComponent implements OnInit {
   }
 
   addPost():void{
-    this.content = this.texto;
+    this.content.push(this.texto);
   }
 }
