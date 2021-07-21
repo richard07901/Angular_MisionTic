@@ -1,5 +1,27 @@
-<p *ngFor="let item of content">{{ item }}</p>
-<mat-form-field >
-    <textarea matInput [(ngModel)] = "texto"></textarea>
-</mat-form-field>
-<button (click) = "addPost()" >Guardar</button>
+
+<form (submit)="addPost(postForm)" #postForm="ngForm">
+  <mat-form-field>
+    <input
+    matInput
+    type="text"
+    name="title"
+    ngModel
+    title="ngModel"
+    placeholder="Title"/>
+  </mat-form-field>
+  <mat-form-field>
+    <input
+    matInput
+    type="text"
+    name="summary"
+    ngModel
+    summary="ngModel"
+    placeholder="Summary"/>
+  </mat-form-field>
+  <mat-form-field >
+    <textarea matInput name="content" ngModel content="ngModel" placeholder="Description"></textarea>
+  </mat-form-field>
+  <button mat-raised-button type="submit" color="primary">Guardar</button>
+</form>
+
+

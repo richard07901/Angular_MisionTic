@@ -8,11 +8,19 @@ import { CreatePostComponent } from './create-post/create-post.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatInputModule } from '@angular/material/input';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { HeaderComponent } from './header/header.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
+import { PostListComponent } from './post-list/post-list.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    CreatePostComponent
+    CreatePostComponent,
+    HeaderComponent,
+    PostListComponent
   ],
   imports: [
     BrowserModule,
@@ -20,6 +28,9 @@ import { MatInputModule } from '@angular/material/input';
     FormsModule,
     BrowserAnimationsModule,
     MatInputModule,
+    MatExpansionModule,
+    MatToolbarModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

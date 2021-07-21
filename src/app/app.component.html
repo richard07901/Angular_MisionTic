@@ -1,2 +1,5 @@
-<h1>Hola</h1>
-<app-create-post id="rojo"></app-create-post>
+<app-header></app-header>
+<main>
+  <app-create-post (postCreated)="onPostAdded($event)"></app-create-post>
+  <app-post-list (posts)="storedPosts"></app-post-list>
+</main>
