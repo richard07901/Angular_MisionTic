@@ -8,12 +8,12 @@ import {Post} from './models/post.model';
 })
 export class AppComponent {
 
-  storedPosts:Post[] = [];
+  // storedPosts:Post[] = [];
 
   title = 'Mision-blog';
 
-  onPostAdded(post: Post){
-    this.storedPosts.push(post);
-  }
+  // onPostAdded(post:Post){
+  //   this.storedPosts.push(post);
+  // }
 
 }
