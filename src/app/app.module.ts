@@ -15,6 +15,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { PostListComponent } from './posts/post-list/post-list.component';
 
 import {ErrorStateMatcher} from '@angular/material/core';
+import {HttpClientModule} from "@angular/common/http";
+
 
 @NgModule({
   declarations: [
@@ -32,6 +34,7 @@ import {ErrorStateMatcher} from '@angular/material/core';
     MatExpansionModule,
     MatToolbarModule,
     MatButtonModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
